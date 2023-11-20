@@ -15,3 +15,9 @@ export function formatPerformance(time: number) {
 export function isBetween(x: number, [min, max]: [number, number]) {
   return x >= min && x <= max
 }
+
+export function isOk(response: Response): Promise<Response> {
+  return new Promise((resolve, reject) =>
+    response.ok ? resolve(response) : reject(response)
+  )
+}

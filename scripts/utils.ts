@@ -1,9 +1,9 @@
-export function withPerformance<T>(handler: () => T): [T, number] {
+export function withPerformance<T>(handler: () => T) {
   const start = performance.now()
   const result = handler()
   const end = performance.now()
 
-  return [result, end - start]
+  return [result, end - start] as const
 }
 
 export function formatPerformance(time: number) {

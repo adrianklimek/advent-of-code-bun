@@ -27,10 +27,10 @@ bun test --watch
 For each day a directory in `src` is created with the following structure:
 ```bash
 📂 01
-┣ 📜 01.ts
-┣ 📜 01.test.ts
-┃ 📜 example.txt
-┗ 📜 input.txt
+├── 📜 01.ts
+├── 📜 01.test.ts
+├── 📜 example.txt
+└── 📜 input.txt
 ```
 ## Closing words
 Happy coding! 🎄✨

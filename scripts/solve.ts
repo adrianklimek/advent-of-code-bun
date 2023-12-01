@@ -22,7 +22,6 @@ const { partOne, partTwo, parse } = await import(`@/${name}/${name}.ts`)
 const [one, onePerformance] = withPerformance(() => partOne?.(parse(input)))
 const [two, twoPerformance] = withPerformance(() => partTwo?.(parse(input)))
 
-console.clear()
 console.log(
   '🌲',
   'Part One:',

@@ -46,10 +46,10 @@ export async function scaffold(day: number, year: number) {
     )
   })
 
-  await Bun.write(new URL(`${name}.test.ts`, directory.href), test)
-  await Bun.write(new URL(`${name}.ts`, directory.href), solution)
-  await Bun.write(new URL(`input.txt`, directory.href), input ?? '')
-  await Bun.write(new URL(`example.txt`, directory.href), '')
+  await Bun.write(new URL(`${name}.test.ts`, directory.href).pathname, test)
+  await Bun.write(new URL(`${name}.ts`, directory.href).pathname, solution)
+  await Bun.write(new URL(`input.txt`, directory.href).pathname, input ?? '')
+  await Bun.write(new URL(`example.txt`, directory.href).pathname, '')
 
   console.log('📂 You all set up, have fun!')
 }

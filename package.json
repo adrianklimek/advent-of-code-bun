@@ -6,7 +6,7 @@
     "solve": "bun --watch ./scripts/solve.ts"
   },
   "devDependencies": {
-    "bun-types": "latest",
+    "@types/bun": "latest",
     "chalk": "^5.3.0",
     "dedent": "^1.5.3",
     "prettier": "^3.4.1"
